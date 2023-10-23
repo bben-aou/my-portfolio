@@ -1,0 +1,32 @@
+
+
+
+/* ============================ Header ============================*/
+.header-container{
+    @apply w-full lg:h-[12vh] h-[8vh]  flex items-center  px-[20px] 2xl:px-0;
+}
+
+.logo-container{
+    @apply w-[40%] md:w-[25%] h-full   flex items-center  ;
+}
+
+.logo-name{
+    @apply lg:ml-[19px] ml-[10px] h-full flex items-center text-[12px] md:text-[18px] lg:text-[30px]  font-roboto font-bold text-dark-800;
+}
+
+.spacing{
+    @apply w-[15%] h-full ;
+}
+
+.nav{
+    @apply w-[60%] h-full ;
+}
+
+.ul{
+    @apply w-full h-full flex items-center justify-center ;
+}
+
+.li-items{
+    @apply lg:ml-[10%] ml-[5%] font-normal text-[17px] font-roboto text-dark-800 cursor-pointer hover:text-dark-900;
+}
+/*=====================================================================*/
