@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from '../assets/icons/logo.svg';
 import openMenu from '../assets/icons/open-menu.svg'
 import './Header.css'
@@ -6,12 +5,14 @@ import { useMediaQuery } from 'react-responsive'
 import PersonalBadge from './components/hamburger-menu/PersonalBadge';
 import NavItems from './components/hamburger-menu/NavItems';
 import icons from '../assets/icons/icons';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     const nav = ["home", "about", "projects", "skills", "contact", "contact"];
 
     const isMdScreen = useMediaQuery({ minWidth: 768 });
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
+
 
     return (
         <>
@@ -36,8 +37,8 @@ export default function Header() {
                             {
                                 nav.map((item, index) => {
                                     return (
-                                        <li className='li-items' key={index}>
-                                            {item}
+                                        <li className='li-items' key={index} >
+                                            {<Link to={item === 'home' ? '/' :`${item}`}>{item}</Link>}
                                         </li>
                                     )
                                 })
@@ -46,12 +47,12 @@ export default function Header() {
                     </nav>
                 }
             </div>
-            <div className='ml-[20%] w-[80%]  h-[92vh] bg-[#f6f6f6]  '>
+            {/* <div className='ml-[20%] w-[80%]  h-[92vh] bg-[#f6f6f6]  '>
                 <PersonalBadge userName="Bilal Ben Aouad" title="Frontend Developer" pic={`${icons.profilePic}`} />
 
                 <NavItems />
 
-            </div>
+            </div> */}
         </>
     )
 }

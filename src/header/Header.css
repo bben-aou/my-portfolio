@@ -11,7 +11,7 @@
 }
 
 .logo-name{
-    @apply lg:ml-[19px] ml-[10px] h-full flex items-center text-[12px] md:text-[18px] lg:text-[30px]  font-roboto font-bold text-dark-800;
+    @apply lg:ml-[19px] ml-[10px] h-full flex items-center text-[12px] md:text-[18px] lg:text-[30px]  font-roboto font-bold text-dark-800 cursor-pointer;
 }
 
 .spacing{
