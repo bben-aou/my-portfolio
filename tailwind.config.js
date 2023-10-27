@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         'roboto' : ['Roboto', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
+        // 'test': ['"Dancing Script"', 'sans-serif'],
       },
       
     },

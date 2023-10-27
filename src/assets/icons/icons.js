@@ -12,6 +12,7 @@ import projectsDarkIcon from './projects-dark.svg';
 import projectsIcon from './projects.svg';
 import contactDarkIcon from './contact-dark.svg';
 import contactIcon from './contact.svg';
+import hiIcon   from './hi.svg'
 
 const icons = {
     logo,
@@ -28,5 +29,6 @@ const icons = {
     projectsIcon,
     contactDarkIcon,
     contactIcon,
+    hiIcon,
 };
 export default icons;
