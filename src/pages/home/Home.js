@@ -12,15 +12,21 @@ function Home() {
                     <div className="h-full w-[50%] text-dark-800">
                         <div className="w-full h-[50%]  flex flex-col justify-center">
                             <div className="w-full flex items-center  ">
-                                <span className="text-[18px] font-poppins font-medium tracking-wide"> Hi Everyone</span>
+                                <span className="text-[18px] font-poppins font-medium tracking-wide">
+                                    Hi Everyone
+                                </span>
                                 <div className="h-full  w-[50%] flex items-center px-[10px]">
-                                    <img src={icons.hiIcon} alt="Hi-everyone" className="w[25px] h-[25px] "/>
-                                    <span className="text-[18px] font-poppins font-medium pl-[10px] tracking-wide">I'm </span>
+                                    <img src={icons.hiIcon} alt="Hi-everyone" className="w[25px] h-[25px] " />
+                                    <span className="text-[18px] font-poppins font-medium pl-[10px] tracking-wide">
+                                        I'm
+                                    </span>
                                 </div>
                             </div>
                             <div className="w-full   flex items-center">
-                                <div className="w-full  font-bold leading-tight	flex flex-col "> 
-                                    <div className="text-[60px] uppercase "> Bilal Ben Aouad </div>
+                                <div className="w-full  font-bold leading-tight	flex flex-col ">
+                                    <div className="text-[60px] uppercase ">
+                                        Bilal Ben Aouad
+                                    </div>
                                     <div className="text-[35px] font-medium uppercase pl-[20px] flex">
                                         <span className="pr-[10px]">{"> "} </span>
                                         <Typewriter
@@ -37,14 +43,20 @@ function Home() {
                                             }}
                                         />
                                     </div>
-                                        <span className="text-[16px] font-poppins font-medium tracking-wide pl-[2px] pt-[20px]">I help startups launch and and grow their products</span>
+                                    <span className="text-[16px] font-poppins font-medium tracking-wide pl-[2px] pt-[20px]">
+                                        I help startups launch and and grow their products
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full h-[50%] bg-cyan-500"></div>
+                        <div className="w-full h-[50%]  ">
+                            <button className="w-[32%] h-[12%] font-poppins font-normal text-[18px]  bg-dark-900 rounded-[20px] text-white">
+                                Download My Resume
+                            </button>
+                        </div>
                     </div>
                     <div className="h-full w-[50%] flex items-center justify-center ">
-                            <img src={homeArt} alt="home-art" />
+                        <img src={homeArt} alt="home-art" />
                     </div>
 
                 </div>
