@@ -1,0 +1,11 @@
+
+.main-home{
+    @apply w-full h-[92vh] lg:h-[88vh] flex items-center justify-center text-white text-4xl;
+}
+
+.lg-sides-container{
+    @apply lg:w-full lg:h-[90%]    lg:flex-row lg:bg-cyan-700;
+}
+.sm-sides-container{
+    @apply w-full h-[90%]  flex  flex-col bg-black;
+}

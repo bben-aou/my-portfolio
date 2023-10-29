@@ -1,0 +1,12 @@
+.sm-left-main{
+    @apply h-1/5 w-full text-dark-800 ;
+}
+.lg-left-main{
+    @apply lg:h-full lg:w-1/2 lg:text-dark-800 ;
+}
+.lg-right-main{
+    @apply lg:h-full lg:w-[50%] lg:flex lg:items-center lg:justify-center;
+}
+.sm-right-main{
+    @apply h-1/2 w-full flex items-center justify-center ;
+}

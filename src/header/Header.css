@@ -10,6 +10,10 @@
     @apply w-[40%] md:w-[25%] h-full   flex items-center  ;
 }
 
+.logo-img{
+    @apply w-[25px] h-[27px] lg:w-[50.06px] lg:h-[55px];
+}
+
 .logo-name{
     @apply lg:ml-[19px] ml-[10px] h-full flex items-center text-[12px] md:text-[18px] lg:text-[30px]  font-roboto font-bold text-dark-800 cursor-pointer;
 }
@@ -29,4 +33,15 @@
 .li-items{
     @apply lg:ml-[10%] ml-[5%] font-normal text-[17px] font-roboto text-dark-800 cursor-pointer hover:text-dark-900;
 }
+
+/* sm menu */
+.open-menu-icon{
+    @apply h-full w-[50%] flex items-center justify-end;
+}
+
+.sm-menu-nav{
+    @apply ml-[20%] w-[80%]  h-[92vh] bg-[#f6f6f6] ;
+}
+
+
 /*=====================================================================*/
