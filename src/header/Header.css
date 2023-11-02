@@ -3,7 +3,7 @@
 
 /* ============================ Header ============================*/
 .header-container{
-    @apply w-full lg:h-[12vh] h-[8vh]  flex items-center  px-[20px] 2xl:px-0;
+    @apply w-full lg:h-[12vh] h-[8vh]  flex items-center lg:px-[50px] px-[20px] 2xl:px-0;
 }
 
 .logo-container{

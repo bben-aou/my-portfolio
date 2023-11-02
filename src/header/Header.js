@@ -8,7 +8,7 @@ import NavItems from './components/hamburger-menu/NavItems';
 import icons from '../assets/icons/icons';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../App';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 
 export default function Header() {
@@ -20,6 +20,11 @@ export default function Header() {
     const handleClick = () => {
         setOpenMenu(!openMenu);
     }
+    
+    useEffect(()=>{
+        if(isMdScreen || isLgScreen)
+            setOpenMenu(false);
+    },[isMdScreen, isLgScreen, setOpenMenu])
 
     return (
         <>
@@ -32,7 +37,7 @@ export default function Header() {
                 </div>
                 <div className='spacing'></div>
                 {
-                    (!isMdScreen || !isLgScreen) &&
+                    (!isMdScreen && !isLgScreen) &&
                     <div className='open-menu-icon' >
                         <img src={!openMenu ? openMenuIcon : closeMenuIcon} alt='open-menu' className='w-[24px] h-[24px] cursor-pointer' onClick={handleClick} />
                     </div>
@@ -54,7 +59,7 @@ export default function Header() {
                     </nav>
                 }
             </div>
-           {openMenu && <div className='sm-menu-nav'>
+           {(openMenu && !isMdScreen && !isLgScreen) && <div className='sm-menu-nav'>
                 <PersonalBadge userName="Bilal Ben Aouad" title="Frontend Developer" pic={`${icons.profilePic}`} />
                 <NavItems />
             </div>}

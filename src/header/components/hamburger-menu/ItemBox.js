@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 
-
-
 export default function ItemBox(props) {
+
     const location = useLocation();
     const [path , setPath] = useState("");
+
+
+   
     useEffect(()=>{
         switch(props.navPath){
             case "/" :{
@@ -34,7 +36,8 @@ export default function ItemBox(props) {
             }
 
         }
-    },[props.navPath])
+    },[ props.navPath])
+
 
     return (
         <div className={`w-[75%] h-[45px] ${location.pathname === props.navPath ? 'bg-dark-900' : 'bg-transparent'}  rounded-[12px] px-[20px] flex items-center gap-[10px]`} >
