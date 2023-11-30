@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -19,6 +20,9 @@ module.exports = {
         'roboto' : ['Roboto', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
       },
+      boxShadow: {
+        'profile': ' 0 0 0 8px rgb(255, 255, 225 );',
+      }
       
     },
     // screens: {
@@ -29,6 +33,7 @@ module.exports = {
     //   '2xl': '1536px',
     // },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+
 }
 

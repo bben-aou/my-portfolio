@@ -46,7 +46,7 @@ export default function LeftSide() {
                 </div>
             </div>
             <div className="w-full h-[50%] flex  flex-col  items-center lg:gap-0 lg:items-start gap-[30%] lg:justify-evenly">
-                <button className="w-[60%] h-[20%] flex items-center justify-center text-[14px] lg:w-[32%] lg:h-[12%] font-poppins font-normal lg:text-[18px]  bg-dark-900 rounded-[10px] lg:rounded-[20px] text-white transition duration-700 ease-in-out hover:scale-105">
+                <button className="w-[60%] h-[20%] flex items-center justify-center text-[14px] lg:w-[35%] lg:h-[18%] font-poppins font-normal lg:text-[18px]  bg-dark-900 rounded-[10px] lg:rounded-[20px] text-white transition duration-700 ease-in-out hover:scale-105">
                     Download My Resume
                 </button>
                 <div className=" flex items-center gap-[26px] ">

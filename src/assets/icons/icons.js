@@ -17,6 +17,7 @@ import hiIcon   from './hi.svg'
 import inIcon from './linkedin.svg'
 import gitIcon from './github.svg'
 import igIcon from './instagram.svg'
+import cardImg from '../pic1.jpg'
 
 const icons = {
     logo,
@@ -38,5 +39,6 @@ const icons = {
     inIcon,
     gitIcon,
     igIcon,
+    cardImg,
 };
 export default icons;

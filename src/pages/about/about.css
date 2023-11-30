@@ -1,3 +1,93 @@
 .main-about{
     @apply w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex items-center justify-center text-white;
 }
+
+
+@keyframes show-up {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-show-up {
+    animation-name: show-up;
+    animation-duration: 0.8s;
+  }
+
+
+
+  @keyframes slide-right{
+    0%{
+      transform:translateX(-100px);
+      -webkit-transform:translateX(-100px);
+      -moz-transform:translateX(-100px);
+      -ms-transform:translateX(-100px);
+      -o-transform:translateX(-100px);
+}
+   100%{
+      transform:translateX(100px);
+      -webkit-transform:translateX(0px);
+      -moz-transform:translateX(0px);
+      -ms-transform:translateX(0px);
+      -o-transform:translateX(0px);
+}
+}
+
+.slide-right{
+  animation:slide-right 0.8s linear both;
+  -webkit-animation:slide-right 0.8s linear both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-100px);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.slide-top {
+  animation: slide-top 0.8s linear both;
+}
+
+
+
+
+.custom-class {
+  @apply  bg-center bg-no-repeat bg-cover box-border justify-self-center w-[150px] h-[150px];
+}
+
+
+
+@keyframes profile_animate {
+0% {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+50% {
+  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+100% {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+}
+
+
+.animate-profile {
+animation: profile_animate 8s ease-in-out infinite 1s;
+-webkit-animation: profile_animate 8s ease-in-out infinite 1s;
+}

@@ -2,6 +2,8 @@ import React from 'react'
 import './about.css'
 import Header from '../../header/Header'
 import profile from '../../assets/bben-aou.jpeg'
+import Practicale from '../../header/components/Practicale'
+
 
 export default function About() {
     return (
@@ -9,20 +11,21 @@ export default function About() {
             <Header />
             <div className={"main-about"}>
                 <div className="w-full h-full  lg:h-[90%]  flex flex-col">
-                        <div className=' w-full h-[25%] bg-cyan-600  flex items-center justify-center'>
-                            <img src={profile} alt='Bilal' className='rounded-full w-[8rem] h-[8rem] '/>
+                    <div className=' w-full h-[27%]  flex items-center justify-center animate-show-up z-10'>
+                        <img src={profile} alt="profile" className=" custom-class  shadow-profile order-1 shadow-dark-800 animate-profile  "></img>
+                    </div>
+                    <div className='w-full h-[77%] mt-[12px]'>
+                        <div className='w-full  h-[15%] flex items-center justify-center text-[2rem] font-poppins font-semibold tracking-widest text-dark-800 pl-[20px] slide-top'>
+                            So, Who Am I ?
                         </div>
-                        <div className='w-full h-[75%]  bg-green-500'>
-                            <div className='w-full bg-red-500 h-[15%] flex items-center justify-center'>
-                                So, Who Am I ?
-                            </div>
-                            <div className=' font-poppins font-light  w-[70%] h-[85%] bg-black mx-[15%] flex items-center justify-center'>
-                                <p className='text-[24px]'>
-                                    I'm Bilal Ben Aouad, a passionate software engineer with over three years of dedicated study in the field. I thrive in front-end development but constantly seek opportunities to challenge myself with new technologies. When I'm not coding, you'll find me strumming the guitar, exploring new destinations, or camping with friends. With a thirst for knowledge and a drive for growth, I'm ready to take on new challenges and contribute to the ever-evolving world of IT.
-                                </p>
+                        <div className='   w-[70%] h-[85%]  mx-[15%] flex items-center justify-center'>
+                            <div className='font-poppins text-dark-900 text-justify px-[10px]  font-normal text-[24px] slide-right'>
+                                <span className='text-[25px] text-dark-800 font-bold '>{"<"}</span> I'm Bilal Ben Aouad, a passionate software engineer with over three years of dedicated study in the field. I thrive in front-end development but constantly seek opportunities to challenge myself with new technologies. When I'm not coding, you'll find me strumming the guitar, exploring new destinations, or camping with friends. With a thirst for knowledge and a drive for growth, I'm ready to take on new challenges and contribute to the ever-evolving world of IT. <span className=' text-[25px] font-bold text-dark-800'>{"/>"}</span>
                             </div>
                         </div>
+                    </div>
                 </div>
+                <Practicale />
             </div>
         </>
     )

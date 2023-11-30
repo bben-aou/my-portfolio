@@ -50,7 +50,7 @@ export default function Header() {
                                 nav.map((item, index) => {
                                     return (
                                         <li className='li-items' key={index} >
-                                            {<Link to={item === 'home' ? '/' : `${item}`}>{item}</Link>}
+                                            {<Link to={item === 'home' ? '/' : `/${item}`}>{item}</Link>}
                                         </li>
                                     )
                                 })
