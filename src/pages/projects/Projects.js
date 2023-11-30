@@ -1,14 +1,16 @@
 
 import Header from "../../header/Header";
 import './projects.css'
-import { CPlain } from "devicons-react";
-import icons from "../../assets/icons/icons";
 import Card from "./Card";
 import projectsData from "./data";
 import { useRef } from "react";
+import { AppContext } from "../../App";
+import { useContext } from 'react';
 
 
 function Projects() {
+    const { openMenu } = useContext(AppContext);
+
     const containerRef = useRef(null);
 
     const handleWheelScroll = (event) => {
@@ -30,7 +32,7 @@ function Projects() {
     return (
         <>
             <Header />
-            <div class="w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-evenly ">
+            <div class={!openMenu ? `w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-evenly` : `hidden`}>
 
                 <div className="w-full h-1/3  flex flex-col items-center  gap-6 justify-end ">
                     <h1 className=" text-[54px] font-black font-roboto text-dark-900">

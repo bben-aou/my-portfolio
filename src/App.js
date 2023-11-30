@@ -24,9 +24,6 @@ function App() {
     <AppContext.Provider value={{ openMenu, setOpenMenu }}>
       <div className='w-screen h-screen bg-light-900 flex justify-center items-center'>
         <div className='w-full max-w-[93rem] h-full '>
-
-          {/* <div className='w-full h-[88vh] bg-black'>
-        </div> */}
           <Router>
             <Routes>
               <Route path='/' element={<Home />} />
@@ -37,8 +34,6 @@ function App() {
           </Router>
         </div>
       </div>
-
-
     </AppContext.Provider>
   );
 }

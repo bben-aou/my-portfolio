@@ -4,12 +4,16 @@ import Header from '../../header/Header'
 import profile from '../../assets/bben-aou.jpeg'
 import Practicale from '../../header/components/Practicale'
 
+import { AppContext } from "../../App";
+import { useContext } from 'react';
 
 export default function About() {
+    const { openMenu } = useContext(AppContext);
+
     return (
         <>
             <Header />
-            <div className={"main-about"}>
+            <div className={!openMenu ? `main-about` : `hidden`}>
                 <div className="w-full h-full  lg:h-[90%]  flex flex-col">
                     <div className=' w-full h-[27%]  flex items-center justify-center animate-show-up z-10'>
                         <img src={profile} alt="profile" className=" custom-class  shadow-profile order-1 shadow-dark-800 animate-profile  "></img>
