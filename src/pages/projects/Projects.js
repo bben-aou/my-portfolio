@@ -23,6 +23,7 @@ function Projects() {
             description={item.projectDescription}
             img={item.projectImgCard}
             technologies={item.technologies}
+            githubPath = {item.githubPath}
         />
     ));
 
