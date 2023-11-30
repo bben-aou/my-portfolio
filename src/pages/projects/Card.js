@@ -17,7 +17,7 @@ export default function Card({title, description, img, technologies}) {
     const IconComp = CPlain;
     
     return (
-        <div className="w-[17rem] h-[19rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-[#1e293b] hover:shadow-xl transition-shadow duration-300 ease-in-out mx-3">
+        <div className="w-[17rem] h-[19rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-[#1e293b] hover:shadow-xl transition-shadow duration-300 ease-in-out mx-2">
             <img className="h-[45%] w-full bg-cover bg-center rounded-t-lg" src={img} alt="" />
             <div className="p-5 pt-[0.4rem] flex flex-col items-center">
                 <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white ">

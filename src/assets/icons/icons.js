@@ -18,6 +18,19 @@ import inIcon from './linkedin.svg'
 import gitIcon from './github.svg'
 import igIcon from './instagram.svg'
 import cardImg from '../pic1.jpg'
+import cppCardImg from '../cppImage.jpg'
+import philosopherCardImg from '../philosophersImg.jpg'
+import pushSwapCardImg from '../pushSwapImg.jpeg'
+import cub3dCardImg from '../cub3d.png'
+import pipexCardImg from '../pipexImg.jpg'
+import getLineCardImg from '../getNextLineImg.jpg'
+import printfCardImg from '../printfImg.png'
+import libftCardImg from '../libftImg.jpg'
+import ircCardImg from '../ircImg.jpg'
+import dockerCardImg from '../dockerImg.jpg'
+import pingCardImg from '../pingImg.png'
+import univCardImg from '../univImg.png'
+
 
 const icons = {
     logo,
@@ -40,5 +53,17 @@ const icons = {
     gitIcon,
     igIcon,
     cardImg,
+    cppCardImg,
+    philosopherCardImg,
+    pushSwapCardImg,
+    cub3dCardImg,
+    pipexCardImg,
+    getLineCardImg,
+    printfCardImg,
+    libftCardImg,
+    ircCardImg,
+    dockerCardImg,
+    pingCardImg,
+    univCardImg,
 };
 export default icons;
