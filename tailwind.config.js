@@ -21,7 +21,7 @@ module.exports = {
         'poppins': ['Poppins', 'sans-serif'],
       },
       boxShadow: {
-        'profile': ' 0 0 0 8px rgb(255, 255, 225 );',
+        'profile': ' 0 0 0 7px rgb(255, 255, 225 );',
       }
       
     },

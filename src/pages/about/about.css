@@ -68,7 +68,7 @@
 
 
 .custom-class {
-  @apply  bg-center bg-no-repeat bg-cover box-border justify-self-center w-[150px] h-[150px];
+  @apply  bg-center bg-no-repeat bg-cover box-border justify-self-center w-[100px] h-[100px] lg:w-[150px] lg:h-[150px];
 }
 
 
@@ -88,6 +88,6 @@
 
 
 .animate-profile {
-animation: profile_animate 8s ease-in-out infinite 1s;
--webkit-animation: profile_animate 8s ease-in-out infinite 1s;
+  animation: profile_animate 8s ease-in-out infinite 0.01s;
+  -webkit-animation: profile_animate 8s ease-in-out infinite 0.01s;
 }

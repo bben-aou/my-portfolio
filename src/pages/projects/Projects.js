@@ -7,7 +7,6 @@ import { useRef } from "react";
 import { AppContext } from "../../App";
 import { useContext } from 'react';
 
-
 function Projects() {
     const { openMenu } = useContext(AppContext);
 
@@ -25,20 +24,20 @@ function Projects() {
             description={item.projectDescription}
             img={item.projectImgCard}
             technologies={item.technologies}
-            githubPath = {item.githubPath}
+            githubPath={item.githubPath}
         />
     ));
 
     return (
         <>
             <Header />
-            <div class={!openMenu ? `w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-evenly` : `hidden`}>
+            <div class={!openMenu ? `w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-center lg:justify-evenly` : `hidden`}>
 
-                <div className="w-full h-1/3  flex flex-col items-center  gap-6 justify-end ">
-                    <h1 className=" text-[54px] font-black font-roboto text-dark-900">
+                <div className="w-full h-1/3  flex flex-col items-center justify-center lg:gap-6 lg:justify-end ">
+                    <h1 className=" text-[2.5rem] lg:text-[3.4rem] font-black font-roboto text-dark-900">
                         My Recent Projects
                     </h1>
-                    <p className="text-right text-dark-800 text-[1.1rem] font-normal font-roboto">
+                    <p className="lg:text-right text-center text-dark-800 text-[0.9rem] lg:text-[1.1rem] font-normal font-roboto">
                         Explore more of my coding projects and view the source code on my GitHub repository.
                     </p>
                 </div>
@@ -52,11 +51,8 @@ function Projects() {
 
                         {cards}
 
-
                     </div>
                 </div>
-
-
             </div>
         </>
 

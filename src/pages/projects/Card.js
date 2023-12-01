@@ -11,7 +11,6 @@ import { Html5OriginalWordmark } from 'devicons-react';
 import { Css3OriginalWordmark } from 'devicons-react';
 
 import React from 'react'
-import icons from '../../assets/icons/icons'
 
 export default function Card({title, description, img, technologies, githubPath}) {
     const IconComp = CPlain;
