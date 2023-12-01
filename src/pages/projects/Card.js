@@ -12,11 +12,11 @@ import { Css3OriginalWordmark } from 'devicons-react';
 
 import React from 'react'
 
-export default function Card({title, description, img, technologies, githubPath}) {
+export default function Card({ title, description, img, technologies, githubPath }) {
     const IconComp = CPlain;
-    
+
     return (
-        <div className="w-[17rem] h-[19rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-[#1e293b] hover:shadow-xl transition-shadow duration-300 ease-in-out mx-2">
+        <div className="w-[17rem] h-[19rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-[#1e293b] hover:shadow-xl hover:scale-105 transition-shadow duration-300 ease-in-out mx-2">
             <img className="h-[45%] w-full bg-cover bg-center rounded-t-lg" src={img} alt="" />
             <div className="p-5 pt-[0.4rem] flex flex-col items-center">
                 <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white ">
@@ -26,15 +26,14 @@ export default function Card({title, description, img, technologies, githubPath}
                     {description}
                 </p>
                 <div className='flex gap-1'>
-                   
                     <IconComp size={24} color="white" className={`mb-2 ${(technologies === "lowLevel") ? "" : "hidden"}`} />
-                    <CplusplusOriginal size={24} color="white" className={`mb-2 ${technologies === "C++" ? "" : "hidden"}`} /> 
-                    <TypescriptOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} /> 
-                    <ReactOriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} /> 
-                    <TailwindcssPlain size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} /> 
-                    <ReduxOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} /> 
-                    <SocketioOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} /> 
-                    <NextjsLine size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} /> 
+                    <CplusplusOriginal size={24} color="white" className={`mb-2 ${technologies === "C++" ? "" : "hidden"}`} />
+                    <TypescriptOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
+                    <ReactOriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
+                    <TailwindcssPlain size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
+                    <ReduxOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
+                    <SocketioOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
+                    <NextjsLine size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
                     <DockerOriginal size={24} color="white" className={`mb-2 ${technologies === "Docker" ? "" : "hidden"}`} />
                     <Html5OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
                     <Css3OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
