@@ -8,6 +8,7 @@ import { AppContext } from "../../App";
 import { useContext } from 'react';
 import icons from '../../assets/icons/icons'
 import { useMediaQuery } from 'react-responsive'
+import urlSocialMedia from '../../header/components/sides/socialMediaData'
 
 export default function About() {
     const { openMenu } = useContext(AppContext);
@@ -19,6 +20,10 @@ export default function About() {
         if (isMdScreen || isLgScreen)
             setShowSocialMedia(false);
     }, [isLgScreen, isMdScreen])
+
+    const handleLinkedInClick = (socialMediaUrl) => {
+        window.open(socialMediaUrl, '_blank');
+    };
 
     return (
         <>
@@ -38,9 +43,9 @@ export default function About() {
                                     {"<"}</span> I'm Bilal Ben Aouad, a passionate software engineer with over three years of dedicated study in the field. I thrive in front-end development but constantly seek opportunities to challenge myself with new technologies. When I'm not coding, you'll find me strumming the guitar, exploring new destinations, or camping with friends. With a thirst for knowledge and a drive for growth, I'm ready to take on new challenges and contribute to the ever-evolving world of IT. <span className=' lg:text-[1rem] font-bold text-dark-800'>{"/>"}
                                 </span>
                                 {showSocialMedia && <div className='h-[50px] mt-[50px] flex justify-center items-center gap-4'>
-                                    <img src={icons.inIcon} alt="linked-in" className="w-[27px] h-[27px] hover:scale-110 transition duration-700 ease-in-out cursor-pointer" />
-                                    <img src={icons.gitIcon} alt="github" className="w-[27px] h-[27px]  hover:scale-110 transition duration-700 ease-in-out cursor-pointer" />
-                                    <img src={icons.igIcon} alt="instagram" className=" w-[27px] h-[27px] mb-[-2px] hover:scale-110 transition duration-700 ease-in-out cursor-pointer" />
+                                    <img src={icons.inIcon} alt="linked-in" className="w-[27px] h-[27px] hover:scale-110 transition duration-700 ease-in-out cursor-pointer" onClick={() => handleLinkedInClick(urlSocialMedia[0].url)} />
+                                    <img src={icons.gitIcon} alt="github" className="w-[27px] h-[27px]  hover:scale-110 transition duration-700 ease-in-out cursor-pointer" onClick={() => handleLinkedInClick(urlSocialMedia[1].url)} />
+                                    <img src={icons.igIcon} alt="instagram" className=" w-[27px] h-[27px] mb-[-2px] hover:scale-110 transition duration-700 ease-in-out cursor-pointer" onClick={() => handleLinkedInClick(urlSocialMedia[2].url)} />
                                 </div>
                                 }
                             </div>
