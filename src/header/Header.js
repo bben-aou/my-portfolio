@@ -16,7 +16,9 @@ export default function Header() {
 
     const isMdScreen = useMediaQuery({ minWidth: 768 });
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
+    
     const { openMenu, setOpenMenu } = useContext(AppContext);
+
     const handleClick = () => {
         setOpenMenu(!openMenu);
     }
