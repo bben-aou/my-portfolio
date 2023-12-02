@@ -9,14 +9,14 @@ import { NextjsLine } from 'devicons-react';
 import { DockerOriginal } from 'devicons-react';
 import { Html5OriginalWordmark } from 'devicons-react';
 import { Css3OriginalWordmark } from 'devicons-react';
-
+import './projects.css';
 import React from 'react'
 
 export default function Card({ title, description, img, technologies, githubPath }) {
     const IconComp = CPlain;
 
     return (
-        <div className="w-[17rem]  lg:w-[17rem] lg:h-[20rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-[#1e293b] hover:shadow-xl hover:scale-105 transition-shadow duration-300 ease-in-out mx-2">
+        <div className="w-[17rem]  lg:w-[17rem] lg:h-[20rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-[#1e293b] hover:shadow-xl hover:scale-105 transition-shadow duration-300 ease-in-out mx-2 scale-up-center">
             <img className="h-[45%] w-full bg-cover bg-center rounded-t-lg" src={img} alt="" />
             <div className="p-5 pt-[0.4rem] flex flex-col items-center">
                 <h5 className="lg:mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white ">
