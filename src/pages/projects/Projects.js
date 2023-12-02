@@ -33,11 +33,11 @@ function Projects() {
             <Header />
             <div class={!openMenu ? `w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-center lg:justify-evenly` : `hidden`}>
 
-                <div className="w-full h-1/3  flex flex-col items-center justify-center lg:gap-6 lg:justify-end ">
-                    <h1 className=" text-[2.5rem] lg:text-[3.4rem] font-black font-roboto text-dark-900">
+                <div className="w-full h-1/3  flex flex-col items-center justify-center  lg:justify-end ">
+                    <h1 className=" text-[2rem] lg:text-[3.4rem] font-black font-roboto text-dark-900">
                         My Recent Projects
                     </h1>
-                    <p className="lg:text-right text-center text-dark-800 text-[0.9rem] lg:text-[1.1rem] font-normal font-roboto">
+                    <p className=" lg:text-right text-center text-dark-800 text-[0.8rem] lg:text-[1.1rem] font-normal font-roboto px-2 lg:px-0 lg:mb-[15px] mt-2">
                         Explore more of my coding projects and view the source code on my GitHub repository.
                     </p>
                 </div>
