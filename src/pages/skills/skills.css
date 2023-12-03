@@ -59,6 +59,6 @@
 } 
 }
 .scale-up-center{
-    animation:scale-up-center 1s;
-    -webkit-animation:scale-up-center 1s;
+    animation:scale-up-center 3s;
+    -webkit-animation:scale-up-center 3s;
 } 
