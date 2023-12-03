@@ -8,10 +8,16 @@ import { AppContext } from "../../App";
 import { useContext } from 'react';
 import { useMediaQuery } from 'react-responsive'
 
+import {useNavigate} from 'react-router-dom';
+
+
 import Quote from './Quote';
 import SocialMedia from './components/SocialMedia'
 
 export default function About() {
+
+    const navigate = useNavigate();
+
     const { openMenu } = useContext(AppContext);
     const isMdScreen = useMediaQuery({ minWidth: 768 });
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
@@ -22,6 +28,9 @@ export default function About() {
             setShowSocialMedia(false);
     }, [isLgScreen, isMdScreen])
 
+    const handleBtnClick = () => {
+        navigate('/contact');
+    };
 
 
     return (
@@ -41,13 +50,13 @@ export default function About() {
                 </div>
                 <div className='w-full h-full  flex flex-col justify-center'>
                     <div className='w-full h-[70%]  px-[50px] flex flex-col items-center pt-[45px]'>
-                        <div className='w-full  font-quote font-bold text-[3.5rem] flex items-end justify-center text-dark-900'>
+                        <div className='w-full  font-quote font-bold text-[3.5rem] flex items-end justify-center text-dark-900 scale-up-center'>
                             I'm Bilal
                         </div>
-                        <p className='w-full text-center font-roboto text-[1.2rem] text-dark-900 leading-16'>
+                        <p className='w-full text-center font-roboto text-[1.2rem] text-dark-900 leading-16 scale-up-center'>
                             A passionate software engineer with over three years of dedicated study in the field. I thrive in front-end development but constantly seek opportunities to challenge myself with new technologies. When I'm not coding, you'll find me strumming the guitar, exploring new destinations, or camping with friends. With a thirst for knowledge and a drive for growth, I'm ready to take on new challenges and contribute to the ever-evolving world of IT.
                         </p>
-                        <button className='w-[150px] h-[50px] bg-[#3E2938] rounded-md mt-[1rem] font-roboto hover:bg-[#414B59] transition duration-700 ease-in-out hover:scale-105 '>
+                        <button className='w-[150px] h-[50px] bg-[#3E2938] rounded-md mt-[1rem] font-roboto hover:bg-[#414B59] transition duration-700 ease-in-out hover:scale-105 scale-up-center' onClick={handleBtnClick}>
                             Contact Me
                         </button>
                     </div>
