@@ -31,7 +31,7 @@ import dockerCardImg from '../dockerImg.jpg'
 import pingCardImg from '../pingImg.png'
 import univCardImg from '../univImg.png'
 import contactVector from '../contactVictor.svg'
-
+import quoteMark from '../quote-mark .svg'
 
 const icons = {
     logo,
@@ -67,5 +67,6 @@ const icons = {
     pingCardImg,
     univCardImg,
     contactVector,
+    quoteMark,
 };
 export default icons;

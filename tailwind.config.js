@@ -19,6 +19,8 @@ module.exports = {
       fontFamily: {
         'roboto' : ['Roboto', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
+        'quote': ["'Indie Flower'", 'cursive'],
+
       },
       boxShadow: {
         'profile': ' 0 0 0 7px rgb(255, 255, 225 );',
