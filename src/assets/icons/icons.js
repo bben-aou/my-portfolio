@@ -30,6 +30,7 @@ import ircCardImg from '../ircImg.jpg'
 import dockerCardImg from '../dockerImg.jpg'
 import pingCardImg from '../pingImg.png'
 import univCardImg from '../univImg.png'
+import contactVector from '../contactVictor.svg'
 
 
 const icons = {
@@ -65,5 +66,6 @@ const icons = {
     dockerCardImg,
     pingCardImg,
     univCardImg,
+    contactVector,
 };
 export default icons;
