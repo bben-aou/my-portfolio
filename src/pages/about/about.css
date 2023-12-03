@@ -1,5 +1,5 @@
 .main-about{
-    @apply w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex  items-center justify-center text-white;
+    @apply w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col lg:flex-row items-center justify-center text-white;
 }
 
 
