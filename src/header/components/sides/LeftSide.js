@@ -13,7 +13,7 @@ export default function LeftSide() {
     };
 
     return (
-        <div className="w-full h-[60%] px-[20px] lg:px-0 lg:h-full lg:w-1/2 text-dark-800 ">
+        <div className="w-full h-[60%] px-[20px] lg:px-0 lg:h-full lg:w-1/2 text-dark-800 dark:text-light-900 ">
             <div className="w-full h-[50%]  flex flex-col  lg:justify-end ">
                 <div className="w-full flex items-center  ">
                     <span className="text-[12px] lg:text-[18px] font-poppins font-medium tracking-wide">
@@ -54,7 +54,7 @@ export default function LeftSide() {
                 </div>
             </div>
             <div className="w-full h-[50%] flex  flex-col  items-center lg:gap-0 lg:items-start gap-[30%] lg:justify-evenly">
-                <a href={"https://drive.google.com/file/d/1k-Q0fX-0q88YdGJupU89Rv_DAtuxRCL6/view"} download rel='noreferrer' target='_blank' className="w-[60%] h-[20%] flex items-center justify-center text-[14px] lg:w-[35%] lg:h-[18%] font-poppins font-normal lg:text-[18px]  bg-dark-900 rounded-[10px] lg:rounded-[20px] text-white transition duration-700 ease-in-out hover:scale-105">
+                <a href={"https://drive.google.com/file/d/1k-Q0fX-0q88YdGJupU89Rv_DAtuxRCL6/view"} download rel='noreferrer' target='_blank' className="w-[60%] h-[20%] flex items-center justify-center text-[14px] lg:w-[35%] lg:h-[18%] font-poppins font-normal lg:text-[18px]  bg-dark-900  rounded-[10px] lg:rounded-[20px] text-white transition duration-700 ease-in-out hover:scale-105">
                     Download My Resume
                 </a>
                 <div className=" flex items-center gap-[26px] ">

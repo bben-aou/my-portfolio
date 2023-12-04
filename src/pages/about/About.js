@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import './about.css'
 import Header from '../../header/Header'
 import profile from '../../assets/bben-aou.jpeg'
@@ -8,7 +8,7 @@ import { AppContext } from "../../App";
 import { useContext } from 'react';
 import { useMediaQuery } from 'react-responsive'
 
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 import Quote from './Quote';
@@ -21,12 +21,12 @@ export default function About() {
     const { openMenu } = useContext(AppContext);
     const isMdScreen = useMediaQuery({ minWidth: 768 });
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
-    const [showSocialMedia, setShowSocialMedia] = useState(true);
+    // const [showSocialMedia, setShowSocialMedia] = useState(true);
 
-    useEffect(() => {
-        if (isMdScreen || isLgScreen)
-            setShowSocialMedia(false);
-    }, [isLgScreen, isMdScreen])
+    // useEffect(() => {
+    //     if (isMdScreen || isLgScreen)
+    //         setShowSocialMedia(false);
+    // }, [isLgScreen, isMdScreen])
 
     const handleBtnClick = () => {
         navigate('/contact');
@@ -42,7 +42,7 @@ export default function About() {
                         <img src={profile} alt="profile" className=" custom-class shadow-profile  shadow-[#445964b0] animate-profile " />
                         {(isMdScreen || isLgScreen) && <SocialMedia />}
                     </div>
-                   {(isMdScreen || isLgScreen) && <Quote
+                    {(isMdScreen || isLgScreen) && <Quote
                         quoteContent={"“Learning is the only thing that the mind never gets tired of, is never afraid of and never regrets”"}
                         author={"Leonardo Da Vinci"}
                     />}

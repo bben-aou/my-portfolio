@@ -16,14 +16,11 @@ export const AppContext = createContext();
 
 function App() {
 
-
-
-
-
   const [openMenu, setOpenMenu] = useState("Home");
+  const [theme, setTheme] = useState("light");
   return (
-    <AppContext.Provider value={{ openMenu, setOpenMenu }}>
-      <div className='w-screen h-screen bg-light-900 flex justify-center items-center'>
+    <AppContext.Provider value={{ openMenu, setOpenMenu, theme, setTheme }}>
+      <div className='w-screen h-screen bg-light-900 dark:bg-[#10101a] flex justify-center items-center'>
         <div className='w-full max-w-[93rem] h-full '>
           <Router>
             <Routes>

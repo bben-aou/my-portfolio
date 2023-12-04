@@ -15,7 +15,7 @@
 }
 
 .logo-name{
-    @apply lg:ml-[19px] ml-[10px] h-full flex items-center text-[12px] md:text-[18px] lg:text-[30px]  font-roboto font-bold text-dark-800 cursor-pointer;
+    @apply lg:ml-[19px] ml-[10px] h-full flex items-center text-[12px] md:text-[18px] lg:text-[30px]  font-roboto font-bold text-dark-800 dark:text-light-900 cursor-pointer;
 }
 
 .spacing{
@@ -31,7 +31,7 @@
 }
 
 .li-items{
-    @apply lg:ml-[10%] ml-[5%] font-normal text-[17px] font-roboto text-dark-800 cursor-pointer hover:text-dark-900;
+    @apply lg:ml-[10%] ml-[5%] font-normal text-[17px] font-roboto text-dark-800  dark:text-light-900 cursor-pointer hover:text-dark-900;
 }
 
 /* sm menu */

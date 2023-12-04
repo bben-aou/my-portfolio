@@ -5,6 +5,7 @@ import './Header.css'
 import { useMediaQuery } from 'react-responsive'
 import PersonalBadge from './components/hamburger-menu/PersonalBadge';
 import NavItems from './components/hamburger-menu/NavItems';
+import ThemeSwitchBtn from './components/theme/ThemeSwitchBtn';
 import icons from '../assets/icons/icons';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../App';
@@ -12,7 +13,7 @@ import { useContext, useEffect } from 'react';
 
 
 export default function Header() {
-    const nav = ["home", "about", "projects", "skills", "contact", "contact"];
+    const nav = ["home", "about", "projects", "skills", "contact"];
 
     const isMdScreen = useMediaQuery({ minWidth: 768 });
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
@@ -27,6 +28,8 @@ export default function Header() {
         if(isMdScreen || isLgScreen)
             setOpenMenu(false);
     },[isMdScreen, isLgScreen, setOpenMenu])
+
+
 
     return (
         <>
@@ -51,12 +54,15 @@ export default function Header() {
                             {
                                 nav.map((item, index) => {
                                     return (
-                                        <li className='li-items' key={index} >
+                                        <li className='li-items ' key={index} >
                                             {<Link to={item === 'home' ? '/' : `/${item}`}>{item}</Link>}
                                         </li>
                                     )
                                 })
                             }
+
+                            <ThemeSwitchBtn/>
+
                         </ul>
                     </nav>
                 }
