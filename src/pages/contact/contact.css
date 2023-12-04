@@ -26,13 +26,13 @@
         box-shadow:0 0 0 0 transparent
     }
     30%{
-        box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.76)
+        box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.682)
     }
     50%{
-        box-shadow:0 0 40px 0 rgba(0, 0, 0, 0.76)
+        box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.7)
     }
     80%{
-        box-shadow:0 0 60px 0 rgba(7, 7, 7, 0.76)
+        box-shadow:0 0 40px 0 rgba(7, 7, 7, 0.694)
     }
     100%{
         box-shadow:0 0 0 0 transparent
@@ -43,30 +43,6 @@
     animation:shadow-drop-center 0.8s linear both;
     -webkit-animation:shadow-drop-center 0.8s linear both;
 }
-
-
-@keyframes t-animation{
-    0%{ letter-spacing:-.2em; transform:translateZ(-700px) translateY(-100px);
-         opacity:0; -webkit-transform:translateZ(-700px) translateY(-100px); -moz-transform:translateZ(-700px) translateY(-100px); -ms-transform:translateZ(-700px) translateY(-100px); -o-transform:translateZ(-700px) translateY(-100px); 
-        }
-        40%{
-            opacity:.6
-        }
-        100%{
-            transform:translateZ(0) translateY(0);
-            opacity:1;
-            -webkit-transform:translateZ(0) translateY(0);
-            -moz-transform:translateZ(0) translateY(0);
-            -ms-transform:translateZ(0) translateY(0);
-            -o-transform:translateZ(0) translateY(0);
-        }
-} 
-
-.title-animation{
-    animation:t-animation 0.5s linear both;
-    -webkit-animation:t-animation 0.5s linear both;
-}
-
 
 @keyframes scale-up-center{
     0%{
@@ -117,4 +93,26 @@
 .scale-up-center{
     animation:scale-up-center 1s;
     -webkit-animation:scale-up-center 1s;
+}
+
+@keyframes slide-top {
+    0% {
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+}
+    100% {
+      transform: translateY(-100px);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+    }
+  }
+  
+  .slide-top {
+    animation: slide-top 0.6s linear both;
+    -webkit-animation: slide-top 0.6s linear both;
 }

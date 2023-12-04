@@ -38,7 +38,7 @@ export default function About() {
             <Header />
             <div className={!openMenu ? `main-about ` : `hidden`}>
                 <div className={`w-full h-[20%] lg:w-[35%] lg:h-full  `}>
-                    <div className=" w-full lg:h-3/5 flex flex-col justify-end items-center">
+                    <div className=" w-full lg:h-3/5 2xl:h-1/2 flex flex-col justify-end items-center ">
                         <img src={profile} alt="profile" className=" custom-class shadow-profile  shadow-[#445964b0] animate-profile " />
                         {(isMdScreen || isLgScreen) && <SocialMedia />}
                     </div>
@@ -47,12 +47,12 @@ export default function About() {
                         author={"Leonardo Da Vinci"}
                     />}
                 </div>
-                <div className='w-full  h-[80%] lg:h-full  flex flex-col lg:justify-center'>
-                    <div className='w-full h-[70%]  px-[50px] flex flex-col items-center lg:pt-[45px]'>
-                        <div className='w-full  font-quote font-bold text-[3.5rem] flex items-end justify-center text-dark-900 scale-up-center'>
+                <div className='w-full  h-[80%] lg:h-full  flex flex-col lg:justify-center  '>
+                    <div className='w-full h-[70%]  px-[50px] 2xl:px-[70px] flex flex-col items-center 2xl:justify-evenly lg:pt-[45px] '>
+                        <div className='w-full  font-quote font-bold text-[3.5rem] 2xl:text-[5rem] flex items-end justify-center text-dark-900 scale-up-center'>
                             I'm Bilal
                         </div>
-                        <p className='w-full text-center font-roboto text-[1rem] lg:text-[1.2rem]  text-dark-900 leading-16 scale-up-center'>
+                        <p className='w-full text-center font-roboto text-[1rem] lg:text-[1.2rem]  text-dark-900 leading-16 2xl:leading-10 scale-up-center'>
                             A passionate software engineer with over three years of dedicated study in the field. I thrive in front-end development but constantly seek opportunities to challenge myself with new technologies. When I'm not coding, you'll find me strumming the guitar, exploring new destinations, or camping with friends. With a thirst for knowledge and a drive for growth, I'm ready to take on new challenges and contribute to the ever-evolving world of IT.
                         </p>
                         <button className=' p-2 lg:p-0 w-[150px]  lg:h-[50px] bg-[#3E2938] rounded-md mt-[1rem] font-roboto hover:bg-[#414B59] transition duration-700 ease-in-out hover:scale-105 scale-up-center' onClick={handleBtnClick}>
