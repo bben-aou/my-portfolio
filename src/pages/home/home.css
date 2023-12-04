@@ -1,6 +1,6 @@
 
 .main-home{
-    @apply w-full h-[92vh] lg:h-[88vh] lg:px-[80px] flex items-center justify-center text-white text-4xl;
+    @apply w-full h-[92vh] md:h-[88vh] lg:px-[80px] flex items-center  justify-center text-white text-4xl;
 }
 
 .lg-sides-container{

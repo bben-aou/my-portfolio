@@ -14,12 +14,12 @@ export default function LeftSide() {
 
     return (
         <div className="w-full h-[60%] px-[20px] lg:px-0 lg:h-full lg:w-1/2 text-dark-800 dark:text-light-900 ">
-            <div className="w-full h-[50%]  flex flex-col  lg:justify-end ">
-                <div className="w-full flex items-center  ">
+            <div className="w-full h-[50%]  flex flex-col  md:justify-center lg:justify-end ">
+                <div className="w-full flex items-center md:justify-end lg:justify-normal  ">
                     <span className="text-[12px] lg:text-[18px] font-poppins font-medium tracking-wide">
                         Hi Everyone
                     </span>
-                    <div className="h-full  w-[50%] flex items-center px-[10px]">
+                    <div className="h-full  w-[50%] flex items-center px-[10px] ">
                         <img src={icons.hiIcon} alt="Hi-everyone" className=" w-[18px] h-[18px] lg:w-[25px] lg:h-[25px] " />
                         <span className=" text-[12px] lg:text-[18px] font-poppins font-medium pl-[10px] tracking-wide">
                             I'm
@@ -27,7 +27,7 @@ export default function LeftSide() {
                     </div>
                 </div>
                 <div className="w-full flex items-center ">
-                    <div className="w-full font-bold leading-tight	flex flex-col ">
+                    <div className="w-full font-bold leading-tight	flex flex-col  md:items-center lg:items-start">
                         <div className=" text-[30px] lg:text-[60px] uppercase [word-spacing:12px]">
                             Bilal Ben Aouad
                         </div>

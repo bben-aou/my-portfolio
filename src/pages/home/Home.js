@@ -10,8 +10,8 @@ function Home() {
     return (
         <>
             <Header />
-            <div className={!openMenu ? `main-home` : `hidden`}>
-                <div className="w-full h-full  lg:h-[90%]  flex flex-col-reverse lg:flex-row  ">
+            <div className={!openMenu ? `main-home ` : `hidden`}>
+                <div className="w-full h-full  md:h-[90%]  flex flex-col-reverse lg:flex-row    ">
                     <LeftSide />
                     <RightSide />
                 </div>
