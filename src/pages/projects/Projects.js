@@ -43,7 +43,7 @@ function Projects() {
                 </div>
 
 
-                <div className="flex overflow-x-scroll hide-scroll-bar py-2"
+                <div className="flex overflow-x-scroll   hide-scroll-bar py-2 "
                     ref={containerRef}
                     onWheel={handleWheelScroll}
                 >
