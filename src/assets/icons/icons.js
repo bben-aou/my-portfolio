@@ -37,6 +37,7 @@ import quoteMark from '../quote-mark .svg'
 import inIconW from './linkedin-w.svg'
 import gitIconW from './github-W.svg'
 import igIconW from './instagram-w.svg'
+import quoteMarkW from './quote-mark-w.svg'
 
 
 const icons = {
@@ -78,5 +79,6 @@ const icons = {
     univCardImg,
     contactVector,
     quoteMark,
+    quoteMarkW,
 };
 export default icons;
