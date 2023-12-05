@@ -38,7 +38,7 @@ import inIconW from './linkedin-w.svg'
 import gitIconW from './github-W.svg'
 import igIconW from './instagram-w.svg'
 import quoteMarkW from './quote-mark-w.svg'
-
+import socketIconW from './socket-w.svg'
 
 const icons = {
     logo,
@@ -80,5 +80,6 @@ const icons = {
     contactVector,
     quoteMark,
     quoteMarkW,
+    socketIconW,
 };
 export default icons;

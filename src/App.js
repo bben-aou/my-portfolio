@@ -8,8 +8,6 @@ import Contact from './pages/contact/Contact';
 
 import { createContext, useState } from 'react';
 
-
-
 export const AppContext = createContext();
 
 
