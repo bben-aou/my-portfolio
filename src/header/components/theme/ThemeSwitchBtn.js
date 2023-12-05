@@ -13,10 +13,6 @@ export default function ThemeSwitchBtn() {
         }
     },[theme])
 
-    // const handleSwitchThemeClick = () =>{
-    //     setTheme(theme === "dark" ? "light" : "dark");
-    // }
-
     return (
         <label className="swap swap-rotate li-items " >
 

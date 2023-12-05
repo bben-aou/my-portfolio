@@ -33,7 +33,7 @@ export default function AlertPopUp({ title, subtitle, status }) {
                 <h3 class="my-4 text-center text-3xl font-semibold text-gray-700">
                     {title}
                 </h3>
-                <p class="w-[230px] text-center font-normal text-gray-600">
+                <p class="text-center font-normal text-gray-600">
                     {subtitle}
                 </p>
                 <Link to={"/"} onClick={() => { setShow(false) }} class="mx-auto mt-10 block rounded-xl border-4 border-transparent bg-orange-400 px-6 py-3 text-center text-base font-medium text-orange-100 outline-8 hover:outline hover:duration-300">

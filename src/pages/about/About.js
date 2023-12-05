@@ -23,12 +23,6 @@ export default function About() {
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
     const isXsScreen = useMediaQuery({ maxWidth: 375 });
 
-    // const [showSocialMedia, setShowSocialMedia] = useState(true);
-
-    // useEffect(() => {
-    //     if (isMdScreen || isLgScreen)
-    //         setShowSocialMedia(false);
-    // }, [isLgScreen, isMdScreen])
 
     const handleBtnClick = () => {
         navigate('/contact');

@@ -29,7 +29,7 @@
         box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.682)
     }
     50%{
-        box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.7)
+        box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.682)
     }
     80%{
         box-shadow:0 0 40px 0 rgba(7, 7, 7, 0.694)
@@ -67,7 +67,7 @@
         text-shadow:0 0 0 0 transparent
     }
     100%{
-        text-shadow: 2px 0px 2px rgba(0, 45, 45, 0.486);
+        text-shadow: 2px 0px 2px rgba(202, 205, 206, 0.486);
     }
 }
 

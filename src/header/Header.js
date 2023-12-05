@@ -18,7 +18,7 @@ export default function Header() {
     const isMdScreen = useMediaQuery({ minWidth: 768 });
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
     
-    const { openMenu, setOpenMenu } = useContext(AppContext);
+    const { openMenu, setOpenMenu , theme} = useContext(AppContext);
 
     const handleClick = () => {
         setOpenMenu(!openMenu);
@@ -35,7 +35,7 @@ export default function Header() {
         <>
             <div className='header-container'>
                 <div className='logo-container'>
-                    <img src={logo} alt='logo ' className='logo-img' />
+                    <img src={(theme !== "dark") ? logo : icons.logoW} alt='logo ' className='logo-img' />
                     <div className='logo-name' >
                         Bilal Ben Aouad
                     </div>

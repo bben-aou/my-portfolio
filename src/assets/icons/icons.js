@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import logoW from './logo-w.svg'
 import openMenuIcon from './open-menu.svg';
 import closeMenuIcon from './closeMenu.svg';
 import profilePic from '../bben-aou.jpeg';
@@ -33,8 +34,14 @@ import univCardImg from '../univImg.png'
 import contactVector from '../contactVictor.svg'
 import quoteMark from '../quote-mark .svg'
 
+import inIconW from './linkedin-w.svg'
+import gitIconW from './github-W.svg'
+import igIconW from './instagram-w.svg'
+
+
 const icons = {
     logo,
+    logoW,
     openMenuIcon,
     closeMenuIcon,
     profilePic,
@@ -51,8 +58,11 @@ const icons = {
     contactIcon,
     hiIcon,
     inIcon,
+    inIconW,
     gitIcon,
+    gitIconW,
     igIcon,
+    igIconW,
     cardImg,
     cppCardImg,
     philosopherCardImg,
