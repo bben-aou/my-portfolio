@@ -38,7 +38,7 @@ export default function Card({ title, description, img, technologies, githubPath
                     <Html5OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
                     <Css3OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
                 </div>
-                <a href={githubPath} rel="noreferrer" target="_blank" className="w-[60%] inline-flex justify-center items-center px-3 py-2 lg:mt-1  text-sm font-medium text-center text-dark-900 bg-light-800 rounded-lg hover:bg-[#675E7D] hover:text-light-900 dark:bg-light-900 dark:hover:bg-light-800 dark:focus:ring-light-800">
+                <a href={githubPath} rel="noreferrer" target="_blank" className="w-[60%] inline-flex justify-center items-center px-3 py-2 lg:mt-1  text-sm font-medium text-center text-dark-900 bg-light-800 rounded-lg hover:bg-[#675E7D] hover:text-light-900 dark:hover:bg-[#00829b]">
                     source code
                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />

@@ -51,7 +51,7 @@ export default function About() {
                         <p className={`w-full ${isXsScreen ? `leading-6 text-justify` : `leading-8 lg:leading-[2.5rem] 2xl:leading-10 text-center `}  font-roboto text-[1rem] lg:text-[1.2rem]  text-dark-900 dark:text-light-800 scale-up-center`}>
                             A passionate software engineer with over three years of dedicated study in the field. I thrive in front-end development but constantly seek opportunities to challenge myself with new technologies. When I'm not coding, you'll find me strumming the guitar, exploring new destinations, or camping with friends. With a thirst for knowledge and a drive for growth, I'm ready to take on new challenges and contribute to the ever-evolving world of IT.
                         </p>
-                        <button className=' p-2 lg:p-0 w-[150px]  lg:h-[50px] bg-[#3E2938] dark:bg-[#35384C] md:tracking-wider rounded-md mt-4 md:mt-6 font-roboto hover:bg-[#414B59] transition duration-700 ease-in-out hover:scale-105 scale-up-center' onClick={handleBtnClick}>
+                        <button className=' p-2 lg:p-0 w-[150px]  lg:h-[50px] bg-[#3E2938] dark:bg-[#00829b] md:tracking-wider rounded-md mt-4 md:mt-6 font-roboto hover:bg-[#414B59] transition duration-700 ease-in-out hover:scale-105 scale-up-center' onClick={handleBtnClick}>
                             Contact Me
                         </button>
                         {( isMdScreen && !isLgScreen) && <Quote
