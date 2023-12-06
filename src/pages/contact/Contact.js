@@ -22,7 +22,7 @@ export default function Contact() {
     return (
         <>
             <Header />
-            <div class={!openMenu ? `container ` : `hidden`}>
+            <div className={!openMenu ? `container ` : `hidden`}>
                 <div className={`${(isMdScreen || isLgScreen) ? `w-[60%]` : `w-full`} wrapper`}>
                     <div className={(isMdScreen || isLgScreen) ? `w-[90%] h-[90%] rounded-lg  flex flex-col justify-center` : `w-full h-full  rounded-lg `}>
                         <div className={`info-section ${(isMdScreen || isLgScreen) ? `justify-center ` : `justify-end`} `}>
