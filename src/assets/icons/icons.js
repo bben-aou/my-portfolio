@@ -33,7 +33,7 @@ import pingCardImg from '../pingImg.png'
 import univCardImg from '../univImg.png'
 import contactVector from '../contactVictor.svg'
 import quoteMark from '../quote-mark .svg'
-
+import notFound from './notFound.svg'
 import inIconW from './linkedin-w.svg'
 import gitIconW from './github-W.svg'
 import igIconW from './instagram-w.svg'
@@ -81,5 +81,6 @@ const icons = {
     quoteMark,
     quoteMarkW,
     socketIconW,
+    notFound,
 };
 export default icons;

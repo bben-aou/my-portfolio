@@ -5,6 +5,7 @@ import Projects from './pages/projects/Projects';
 import About from './pages/about/About';
 import Skills from './pages/skills/Skills'
 import Contact from './pages/contact/Contact';
+import NotFound from './pages/404/NotFound';
 
 import { createContext, useState } from 'react';
 
@@ -27,7 +28,7 @@ function App() {
               <Route path='/about' element={<About />} />
               <Route path='/skills' element={<Skills />} />
               <Route path='/contact' element={<Contact />} />
-              <Route path='*' element={<h1>404 PAGE NOT FOUND !</h1>} />
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </Router>
         </div>
