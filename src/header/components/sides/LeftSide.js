@@ -36,7 +36,7 @@ export default function LeftSide() {
                         <div className=" text-[30px] lg:text-[60px] uppercase [word-spacing:12px]">
                             Bilal Ben Aouad
                         </div>
-                        <div className="text-[22px] lg:text-[35px] py-[10px] font-medium uppercase pl-[20px] flex text-[#00829b]">
+                        <div className="text-[22px] lg:text-[35px] py-[10px] font-medium uppercase pl-[20px] flex text-dark-700">
                             <span className="pr-[10px]">{"> "} </span>
                             <Typewriter
                                 options={{
@@ -59,7 +59,7 @@ export default function LeftSide() {
                 </div>
             </div>
             <div className="w-full h-[50%]  flex  flex-col  items-center lg:gap-0 lg:items-start gap-[30%] lg:justify-evenly">
-                <a href={"https://drive.google.com/file/d/1k-Q0fX-0q88YdGJupU89Rv_DAtuxRCL6/view"} download rel='noreferrer' target='_blank' className="w-[60%] h-[20%] md:w-[30%] 2xl:w-[230px] 2xl:h-[60px]  flex items-center justify-center text-[14px] lg:w-[40%] lg:h-[16%] font-poppins font-normal lg:text-[18px]  bg-dark-900  rounded-[10px] lg:rounded-[20px] text-white transition duration-700 ease-in-out hover:scale-105 dark:bg-[#00829b]" >
+                <a href={"https://drive.google.com/file/d/1k-Q0fX-0q88YdGJupU89Rv_DAtuxRCL6/view"} download rel='noreferrer' target='_blank' className="w-[60%] h-[20%] md:w-[30%] 2xl:w-[230px] 2xl:h-[60px]  flex items-center justify-center text-[14px] lg:w-[40%] lg:h-[16%] font-poppins font-normal lg:text-[18px]  bg-dark-900  rounded-[10px] lg:rounded-[20px] text-white transition duration-700 ease-in-out hover:scale-105 dark:bg-dark-700" >
                     Download My Resume
                 </a>
                 <div className=" flex items-center gap-[26px] ">

@@ -5,7 +5,6 @@ import { useContext } from 'react';
 import { useMediaQuery } from 'react-responsive'
 
 import icons from '../../assets/icons/icons';
-// import AlertPopUp from './AlertPopUp';
 import SocialMedia from '../about/components/SocialMedia';
 import EmailForm from './EmailForm';
 

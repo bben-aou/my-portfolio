@@ -16,7 +16,7 @@ export default function Card({ title, description, img, technologies, githubPath
     const IconComp = CPlain;
 
     return (
-        <div className="w-[17rem] 2xl:w-[18rem] 2xl:h-[22rem]  lg:w-[17rem] lg:h-[20rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-[#1e293b] transition duration-700 ease-in-out hover:scale-105 mx-2 scale-up-center">
+        <div className="w-[17rem] 2xl:w-[18rem] 2xl:h-[22rem]  lg:w-[17rem] lg:h-[20rem] max-w-xs overflow-hidden rounded-lg shadow-md bg-dark-400 transition duration-700 ease-in-out hover:scale-105 mx-2 scale-up-center">
             <img className="h-[45%] w-full bg-cover bg-center rounded-t-lg" src={img} alt="" />
             <div className="p-5 pt-[0.4rem] flex flex-col items-center">
                 <h5 className="lg:mb-2 text-xl font-bold tracking-wide text-light-800  ">
@@ -38,7 +38,7 @@ export default function Card({ title, description, img, technologies, githubPath
                     <Html5OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
                     <Css3OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
                 </div>
-                <a href={githubPath} rel="noreferrer" target="_blank" className="w-[60%] inline-flex justify-center items-center px-3 py-2 lg:mt-1  text-sm font-medium text-center text-dark-900 bg-light-800 rounded-lg hover:bg-[#675E7D] hover:text-light-900 dark:hover:bg-[#00829b]">
+                <a href={githubPath} rel="noreferrer" target="_blank" className="w-[60%] inline-flex justify-center items-center px-3 py-2 lg:mt-1  text-sm font-medium text-center text-dark-900 bg-light-800 rounded-lg hover:bg-btn-700 hover:text-light-900 dark:hover:bg-dark-700">
                     source code
                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
