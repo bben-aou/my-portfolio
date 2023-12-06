@@ -15,7 +15,7 @@ export default function Skills() {
   return (
     <>
       <Header />
-      <div class={!openMenu ? `w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col items-center justify-evenly` : `hidden`}>
+      <div className={!openMenu ? `w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col items-center justify-evenly` : `hidden`}>
 
         <div className="w-full h-1/3 mt-[15px]  flex flex-col items-center justify-center  lg:justify-end ">
           <h1 className=" text-[2rem] lg:text-[3.4rem] 2xl:text-[3.6rem]  font-black font-roboto text-dark-900 dark:text-light-900 slide-top">
