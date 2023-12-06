@@ -1,3 +1,31 @@
+
+.container{
+    @apply w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex;
+}
+.wrapper{
+    @apply h-full flex items-center justify-center 
+}
+
+.info-section{
+    @apply w-full  h-[25%] md:h-[20%] 2xl:h-[30%] justify-center flex flex-col items-center;
+}
+
+.contact-title{
+    @apply text-[1.4rem] lg:text-[2rem] 2xl:text-[3rem] 2xl:tracking-wide font-semibold font-roboto text-dark-900 tracking-[0.5px] dark:text-light-900 slide-top;
+}
+
+.paragraph-styling{
+    @apply lg:text-right text-center text-dark-800 text-[0.8rem] lg:text-[1rem] font-normal font-roboto lg:mt-2 2xl:mt-4  dark:text-light-800 slide-right;
+}
+
+.email-styling{
+    @apply text-dark-900 dark:text-light-800 font-semibold transition duration-700 ease-in-out email-animation;
+}
+
+.form-container{
+    @apply w-full h-[75%] md:h-[50%] lg:h-[60%]  2xl:h-[70%] 2xl:justify-start flex flex-col md:justify-center px-[50px];
+}
+
 @keyframes slide-right{
     0%{
       transform:translateX(-100px);
