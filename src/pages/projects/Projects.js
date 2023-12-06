@@ -1,8 +1,8 @@
 
 import Header from "../../header/Header";
 import './projects.css'
-import Card from "./Card";
-import projectsData from "./data";
+import Card from "./components/Card";
+import projectsData from "./components/data";
 import { useRef } from "react";
 import { AppContext } from "../../App";
 import { useContext } from 'react';

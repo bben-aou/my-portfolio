@@ -4,7 +4,7 @@ import Header from "../../header/Header";
 import { AppContext } from "../../App";
 import { useContext } from 'react';
 
-import SkillsIcons from './SkillsIcons';
+import SkillsIcons from './components/SkillsIcons';
 
 
 

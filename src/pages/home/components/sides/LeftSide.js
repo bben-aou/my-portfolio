@@ -1,9 +1,9 @@
 import React from 'react'
-import icons from '../../../assets/icons/icons'
+import icons from '../../../../assets/icons/icons'
 import Typewriter from 'typewriter-effect';
 import './sides.css';
-import urlSocialMedia from './socialMediaData'
-import { AppContext } from '../../../App';
+import urlSocialMedia from '../../../../components/socialMediaData'
+import { AppContext } from '../../../../App';
 import { useContext } from 'react';
 
 
@@ -14,7 +14,7 @@ export default function LeftSide() {
         window.open(socialMediaUrl, '_blank');
     };
 
-    const {theme} = useContext(AppContext);
+    const { theme } = useContext(AppContext);
 
 
     return (

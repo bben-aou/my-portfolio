@@ -1,6 +1,6 @@
 import React from 'react'
 import icons from '../../../assets/icons/icons'
-import urlSocialMedia from '../../../header/components/sides/socialMediaData';
+import urlSocialMedia from '../../../components/socialMediaData';
 import '../about.css'
 import { AppContext } from '../../../App';
 import { useContext } from 'react';

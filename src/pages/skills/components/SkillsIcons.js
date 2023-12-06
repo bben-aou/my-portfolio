@@ -17,9 +17,9 @@ import { DockerOriginalWordmark } from 'devicons-react';
 import { FigmaOriginal } from 'devicons-react';
 import { GithubOriginalWordmark } from 'devicons-react';
 
-import { AppContext } from '../../App';
+import { AppContext } from '../../../App';
 import { useContext } from 'react';
-import icons from '../../assets/icons/icons';
+import icons from '../../../assets/icons/icons';
 
 
 export default function SkillsIcons() {

@@ -1,6 +1,6 @@
 import Header from "../../header/Header";
-import LeftSide from "../../header/components/sides/LeftSide";
-import RightSide from "../../header/components/sides/RightSide";
+import LeftSide from "./components/sides/LeftSide";
+import RightSide from "./components/sides/RightSide";
 import './home.css'
 import { AppContext } from "../../App";
 import { useContext } from 'react';

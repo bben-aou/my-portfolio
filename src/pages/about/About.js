@@ -11,7 +11,7 @@ import { useMediaQuery } from 'react-responsive'
 import { useNavigate } from 'react-router-dom';
 
 
-import Quote from './Quote';
+import Quote from './components/Quote';
 import SocialMedia from './components/SocialMedia'
 
 export default function About() {

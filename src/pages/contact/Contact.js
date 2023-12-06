@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive'
 
 import icons from '../../assets/icons/icons';
 import SocialMedia from '../about/components/SocialMedia';
-import EmailForm from './EmailForm';
+import EmailForm from './components/EmailForm';
 
 import './contact.css';
 

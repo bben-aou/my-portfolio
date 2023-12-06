@@ -9,7 +9,7 @@ import { NextjsLine } from 'devicons-react';
 import { DockerOriginal } from 'devicons-react';
 import { Html5OriginalWordmark } from 'devicons-react';
 import { Css3OriginalWordmark } from 'devicons-react';
-import './projects.css';
+import '../projects.css';
 import React from 'react'
 
 export default function Card({ title, description, img, technologies, githubPath }) {

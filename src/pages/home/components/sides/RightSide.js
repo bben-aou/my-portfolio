@@ -1,5 +1,5 @@
 import React from 'react'
-import homeArt from '../../../assets/home-art.svg'
+import homeArt from '../../../../assets/home-art.svg'
 import './sides.css';
 
 export default function RightSide() {

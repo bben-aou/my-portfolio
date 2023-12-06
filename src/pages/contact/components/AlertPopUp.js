@@ -5,7 +5,7 @@ export default function AlertPopUp({ title, subtitle, status }) {
 
     const [show, setShow] = useState(true);
     return (
-       
+
         <div class={show ? `flex min-h-screen items-center justify-center bg-gray-100` : `hidden`}>
             <div class="rounded-lg bg-gray-50 px-16 py-14">
                 <div class="flex justify-center">

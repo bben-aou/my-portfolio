@@ -1,8 +1,8 @@
 import React from 'react'
-import icons from '../../assets/icons/icons'
-import './about.css'
+import icons from '../../../assets/icons/icons'
+import '../about.css'
 
-import { AppContext } from '../../App';
+import { AppContext } from '../../../App';
 import { useContext } from 'react';
 
 
