@@ -13,14 +13,12 @@
     }
   }
   
-  .animate-show-up {
+.animate-show-up {
     animation-name: show-up;
     animation-duration: 0.8s;
-  }
+}
 
-
-
-  @keyframes slide-right{
+@keyframes slide-right{
     0%{
       transform:translateX(-100px);
       -webkit-transform:translateX(-100px);
@@ -63,14 +61,9 @@
   animation: slide-top 0.8s linear both;
 }
 
-
-
-
 .custom-class {
   @apply  bg-center bg-no-repeat bg-cover box-border justify-self-center w-[100px] h-[100px] lg:w-[150px] lg:h-[150px];
 }
-
-
 
 @keyframes profile_animate {
 0% {
@@ -130,4 +123,34 @@
 .scale-up-center{
   animation:scale-up-center 1s;
   -webkit-animation:scale-up-center 1s;
+}
+
+.personnel-info-section{
+  @apply w-full h-[20%] lg:w-[35%] md:w-full md:h-[20%] lg:h-full ;
+}
+.img-wrapper{
+  @apply w-full h-full md:h-full lg:h-3/5 2xl:h-1/2 flex flex-col justify-end lg:justify-end items-center;
+}
+
+.img-styling{
+  @apply custom-class shadow-profile  shadow-dark-600 animate-profile dark:shadow-dark-500;
+}
+
+.personnel-description-section{
+  @apply w-full h-[80%] md:w-full md:h-[80%] lg:h-full   flex flex-col lg:justify-center;
+}
+
+.personnel-description-section-wrapper{
+  @apply w-full  h-full md:h-full lg:h-[70%]  px-[50px] 2xl:px-[70px] flex flex-col md:justify-center lg:justify-normal items-center  2xl:justify-evenly lg:pt-[45px];
+}
+
+.name-styling{
+  @apply w-full font-quote font-bold text-[3.5rem] 2xl:text-[5rem] flex items-end justify-center text-dark-900 dark:text-light-900 scale-up-center;
+}
+
+.description-styling{
+  @apply font-roboto text-[1rem] lg:text-[1.2rem]  text-dark-900 dark:text-light-800 scale-up-center;
+}
+.contact-me-btn-styling{
+  @apply p-2 lg:p-0 w-[150px] md:h-[3rem] lg:h-[50px] bg-btn-900 dark:bg-dark-700 md:tracking-wider rounded-md mt-4 md:mt-6 font-roboto hover:bg-btn-800 transition duration-700 ease-in-out hover:scale-105 scale-up-center;
 }
