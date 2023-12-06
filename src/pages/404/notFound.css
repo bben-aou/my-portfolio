@@ -1,0 +1,35 @@
+.container{
+    @apply w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex items-center justify-center
+}
+
+.wrapper{
+    @apply w-[70%] h-[70%] lg:w-[80%] lg:h-[80%] ;
+}
+
+.illustrator-avatar-styling{
+    @apply w-full h-[40%] md:h-[50%] lg:h-[60%]  flex items-end lg:items-center justify-center;
+}
+
+.description-section{
+    @apply w-full h-[60%] md:h-[50%] lg:h-[40%];
+}
+
+.wrapper-description{
+    @apply w-full h-[70%];
+}
+
+.ops-title{
+    @apply w-full h-[30%] md:h-[40%] lg:h-[50%] dark:text-light-900 flex items-center justify-center text-[2.5rem] md:text-[4rem] text-dark-900;
+}
+
+.p-description{
+    @apply w-full h-[25%] lg:h-[40%] flex justify-center text-[1rem] font-poppins text-dark-800 dark:text-light-800;
+}
+
+.link-wrapper{
+    @apply w-full h-[60%] flex justify-center items-center;
+}
+
+.btn-styling{
+    @apply mx-auto w-[135px] h-[50%]  lg:h-[50px] 2xl:h-[60px] flex items-center justify-center rounded-xl border-4 border-transparent dark:bg-dark-700 bg-orange-400 px-6 py-3 text-center text-base font-medium text-orange-100 outline-8 hover:outline hover:duration-300;
+}
