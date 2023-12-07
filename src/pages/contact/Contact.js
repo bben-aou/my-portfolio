@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import icons from '../../assets/icons/icons';
 import SocialMedia from '../about/components/SocialMedia';
 import EmailForm from './components/EmailForm';
+import Practicale from '../../header/components/Practicale'
 
 import './contact.css';
 
@@ -23,7 +24,7 @@ export default function Contact() {
         <>
             <Header />
             <div className={!openMenu ? `container ` : `hidden`}>
-                <div className={`${(isMdScreen || isLgScreen) ? `w-[60%]` : `w-full`} wrapper`}>
+                <div className={`${(isMdScreen || isLgScreen) ? `w-[60%]` : `w-full`} wrapper  z-50`}>
                     <div className={(isMdScreen || isLgScreen) ? `w-[90%] h-[90%] rounded-lg  flex flex-col justify-center` : `w-full h-full  rounded-lg `}>
                         <div className={`info-section ${(isMdScreen || isLgScreen) ? `justify-center ` : `justify-end`} `}>
                             <h1 className='contact-title'>
@@ -50,10 +51,11 @@ export default function Contact() {
                 </div>
                 {
                     (isMdScreen || isLgScreen) &&
-                    <div className='w-[40%] md:pr-[5px] lg:pr-0 h-full flex items-center '>
+                    <div className='w-[40%] md:pr-[5px] lg:pr-0 h-full flex items-center z-50'>
                         <img src={icons.contactVector} alt='' className='scale-up-center' />
                     </div>
                 }
+                <Practicale />
             </div>
         </>
     )

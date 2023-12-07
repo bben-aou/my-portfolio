@@ -47,7 +47,7 @@ export default function About() {
                         />
                     }
                 </div>
-                <div className='personnel-description-section'>
+                <div className='personnel-description-section z-50'>
                     <div className={`personnel-description-section-wrapper`}>
                         <div className={`name-styling`}>
                             I'm Bilal

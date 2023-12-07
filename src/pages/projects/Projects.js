@@ -3,6 +3,8 @@ import Header from "../../header/Header";
 import './projects.css'
 import Card from "./components/Card";
 import projectsData from "./components/data";
+import Practicale from '../../header/components/Practicale'
+
 import { useRef } from "react";
 import { AppContext } from "../../App";
 import { useContext } from 'react';
@@ -33,9 +35,9 @@ function Projects() {
     return (
         <>
             <Header />
-            <div className={!openMenu ? `w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-center lg:justify-evenly 2xl:justify-center` : `hidden`}>
+            <div className={!openMenu ? ` w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-center lg:justify-evenly 2xl:justify-center` : `hidden`}>
 
-                <div className="w-full h-1/3  flex flex-col items-center justify-center  lg:justify-end 2xl:justify-center  ">
+                <div className="z-50 w-full h-1/3  flex flex-col items-center justify-center  lg:justify-end 2xl:justify-center  ">
                     <h1 className=" text-[2rem] lg:text-[3.4rem] 2xl:text-[3.6rem] font-black font-roboto text-dark-900 slide-top dark:text-light-900">
                         My Recent Projects
                     </h1>
@@ -45,7 +47,7 @@ function Projects() {
                 </div>
 
 
-                <div className="flex overflow-x-scroll   hide-scroll-bar py-2 "
+                <div className="flex overflow-x-scroll hide-scroll-bar py-2  z-50 "
                     ref={containerRef}
                     onWheel={handleWheelScroll}
                 >
@@ -55,6 +57,7 @@ function Projects() {
 
                     </div>
                 </div>
+                <Practicale/>
             </div>
         </>
 
