@@ -18,8 +18,9 @@ function Projects() {
         container.scrollLeft += event.deltaY;
     };
 
-    const cards = projectsData.map(item => (
+    const cards = projectsData.map((item , key)=> (
             <Card
+                key={key}
                 title={item.projectTitle}
                 description={item.projectDescription}
                 img={item.projectImgCard}
