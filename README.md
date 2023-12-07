@@ -2,6 +2,9 @@
 
 Welcome to my portfolio project! This is a simple portfolio website built using React.js and Tailwind CSS.
 
+## Live Demo
+Check out the live demo of the portfolio project [here](https://my-portfolio-bben-aou.vercel.app/projects).
+
 ## Technologies Used
 - React.js: A popular JavaScript library for building user interfaces.
 - Tailwind CSS: A utility-first CSS framework for rapidly styling web applications.
