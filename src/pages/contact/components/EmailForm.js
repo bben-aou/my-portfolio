@@ -58,21 +58,21 @@ export default function EmailForm() {
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-dark-900 dark:text-light-900 font-roboto ">
                     Your email
                 </label>
-                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="shadow-sm  bg-gray-50 border border-gray-300 text-dark-900 font-roboto text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-500  dark:shadow-sm-light focus:outline-none " placeholder="name@email.com" required />
+                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="shadow-sm  bg-gray-50 border border-gray-300 text-dark-900 font-roboto text-sm rounded-lg block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-500  dark:shadow-sm-light " placeholder="name@email.com" required />
             </div>
             <div className='mb-[10px]'>
                 <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-light-900 font-roboto ">
                     Subject
                 </label>
-                <input type="text" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:border-gray-600 dark:placeholder-gray-500 dark:text-dark-900 font-roboto dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light focus:outline-none " placeholder="Describe the subject" required />
+                <input type="text" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm  dark:border-gray-600 dark:placeholder-gray-500 dark:text-dark-900 font-roboto dark:shadow-sm-light " placeholder="Describe the subject" required />
             </div>
             <div className="sm:col-span-2">
                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-light-900 font-roboto ">
                     Your message
                 </label>
-                <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-500 dark:text-dark-900 font-roboto dark:focus:ring-primary-500 dark:focus:border-primary-500 focus:outline-none " placeholder="Leave a comment . . ."></textarea>
+                <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300  dark:border-gray-600 dark:placeholder-gray-500 dark:text-dark-900 font-roboto  " placeholder="Leave a comment . . ."></textarea>
             </div>
-            <button type="submit" className=" py-3 px-5 bg-gray-900 dark:bg-dark-700 mt-[15px] text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-8  dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 shadow-drop-center">
+            <button type="submit" className=" py-3 px-5 bg-gray-900 dark:bg-dark-700 mt-[15px] text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-8  dark:bg-primary-600 dark:hover:bg-primary-700  shadow-drop-center">
                 Send message
             </button>
         </form>
