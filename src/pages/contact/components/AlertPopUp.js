@@ -6,8 +6,8 @@ export default function AlertPopUp({ title, subtitle, status }) {
     const [show, setShow] = useState(true);
     return (
 
-        <div class={show ? `flex min-h-screen items-center justify-center bg-gray-100 dark:bg-darkTheme-900` : `hidden`}>
-            <div class="rounded-lg bg-gray-50 dark:bg-light-800 px-16 py-14">
+        <div class={show ? `flex h-[90%] md:h-[80%] items-center justify-center  dark:bg-darkTheme-900` : `hidden`}>
+            <div class="rounded-lg dark:bg-[#e4f0f7] md:px-16 px-12 py-[1rem]  lg:py-8 2xl:py-16  2xl:px-8 ">
                 <div class="flex justify-center">
                     <div class={`rounded-full ${status === "succuss" ? `bg-green-200 ` : `bg-red-200 `}  p-6`}>
                         <div class={`flex h-16 w-16 items-center justify-center ${status === "succuss" ? `bg-green-500 ` : `bg-red-500 `} rounded-full p-4`}>
@@ -36,7 +36,7 @@ export default function AlertPopUp({ title, subtitle, status }) {
                 <p class="text-center font-normal text-gray-600">
                     {subtitle}
                 </p>
-                <Link to={"/"} onClick={() => { setShow(false) }} class="mx-auto mt-10 block rounded-xl border-4 border-transparent dark:bg-dark-700 bg-orange-400 px-6 py-3 text-center text-base font-medium text-orange-100 outline-8 hover:outline hover:duration-300">
+                <Link to={"/"} onClick={() => { setShow(false) }} class="mx-auto w-[150px] mt-5 md:mt-10 block rounded-xl border-4 border-transparent dark:bg-dark-700 bg-orange-400 px-6 py-3 text-center text-base font-medium text-orange-100 outline-8 hover:outline hover:duration-300">
                     Go Home !
                 </Link>
             </div>
